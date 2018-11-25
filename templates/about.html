@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+{% get_static_prefix as STATIC_PREFIX %}
+<div class="container">
+    <!-- Page Heading/Breadcrumbs -->
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+            <a href="{% url 'index' %}">Home</a>
+        </li>
+        <li class="breadcrumb-item active">About Us</li>
+    </ol>
+     <h1>About Us</h1>
+    <div id="about" class="container-fluid">
+        <div class="row">
+            <div class="col-lg-8 col-sm-12">
+            </div>
+            <div id="aboutimg" style="text-align: center; align-self: center;">
+                <img src="{{ STATIC_PREFIX }}img/gate2.jpg"/>
+            </div>
+            <div style="min-height: 100px"></div>
+            <div class="col-12">
+                 <h4>We're passionate about pet care</h4><br>
+                <p>Here at Sheep's Bridge, we are passionate about animals. With the help of our experienced team and state of the art security systems, you can rest easy knowing your pet is safe and sound.  We offer luxurious pet boarding facilities along with large indoor and outdoor exercise areas. We also offer pet collection and drop-off, enquire <a href="{% url 'contact' %}">here</a>. </p>
+            </div>
+            <div style="min-height: 100px"></div>
+            <a href="{% url 'contact' %}" class="btn btn-success btn-lg">Get in Touch</a>
+        </div>
+    </div>
+</div>
+{% endblock %}

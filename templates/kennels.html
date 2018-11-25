@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+{% load staticfiles %}
+{% get_static_prefix as STATIC_PREFIX %}
+<div class="container">
+    <!-- Page Heading/Breadcrumbs -->
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+            <a href="{% url 'index' %}">Home</a>
+        </li>
+        <li class="breadcrumb-item active">Luxury Kennels</li>
+    </ol>
+    <h1>Luxury Kennels</h1>
+    <div id="kennel">
+        <div id="kennelcarousel" class="carousel slide carousel-fade" style="width: 100%" data-ride="carousel">
+            <!-- The slideshow -->
+            <div class="carousel-inner">
+                <div id="" class="carousel-item active">
+                    <img style="max-width: 100%" src="{{ STATIC_PREFIX }}img/kennel6.jpg"/>
+                </div>
+                <div class="carousel-item">
+                    <img style="max-width: 100%" src="{{ STATIC_PREFIX }}img/kennel2.jpg"/>
+                </div>
+                <div class="carousel-item">
+                    <img style="max-width: 100%" src="{{ STATIC_PREFIX }}img/kennel3.jpg"/>
+                </div>
+                 <div class="carousel-item">
+                    <img style="max-width: 100%" src="{{ STATIC_PREFIX }}img/kennel4.jpg"/>
+                </div>
+                 <div class="carousel-item">
+                    <img style="max-width: 100%" src="{{ STATIC_PREFIX }}img/kennel5.jpg"/>
+                </div>
+                 <div class="carousel-item">
+                    <img style="max-width: 100%" src="{{ STATIC_PREFIX }}img/kennel1.jpg"/>
+                </div>
+                <a class="carousel-control-prev" href="#kennelcarousel" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#kennelcarousel" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+            </div>
+        </div>
+        <div style="min-height: 50px"></div>
+        <div class="col-lg-8 col-sm-12">
+            <h4></h4><br>
+            <a href="https://www.kennelbooker.com/clientlogin.aspx?id=4f5e46c5-b7e3-47d8-a136-90b5f61f7cd4" target="_blank" class="btn">Book Now</a>
+        </div>
+    </div>
+</div>
+{% endblock %}

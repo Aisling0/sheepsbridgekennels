@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<div class="container">
+    <!-- Page Heading/Breadcrumbs -->
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+            <a href="{% url 'index' %}">Home</a>
+        </li>
+        <li class="breadcrumb-item active">Contact Us</li>
+    </ol>
+
+    <div class="row">
+        <div class="col-12">
+            <br>
+            <h2>Thank you for getting in touch!</h2><br>
+            <p>We appreciate you contacting us. One of our team will get back to you shortly.</p>
+        </div>
+    </div>
+</div>
+{% endblock %}
