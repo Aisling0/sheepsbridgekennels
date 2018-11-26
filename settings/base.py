@@ -119,9 +119,9 @@ STATICFILES_DIRS = (
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
 
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = 'sheepsbridgekennels@gmail.com'
-EMAIL_HOST_PASSWORD = '301N2014a!'
+EMAIL_HOST = 'smtp.sendgrid.net'
+EMAIL_HOST_USER = 'apikey'
+EMAIL_HOST_PASSWORD = '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'
 EMAIL_PORT = '587'
 EMAIL_USE_TLS = True
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
