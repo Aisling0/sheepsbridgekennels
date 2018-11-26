@@ -121,7 +121,7 @@ MEDIA_URL = '/media/'
 
 EMAIL_HOST = 'smtp.sendgrid.net'
 EMAIL_HOST_USER = 'apikey'
-EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')
+EMAIL_HOST_PASSWORD = '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'
 EMAIL_PORT = '587'
 EMAIL_USE_TLS = True
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
