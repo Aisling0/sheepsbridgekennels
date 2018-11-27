@@ -13,6 +13,6 @@ class ContactForm(forms.Form):
     name = forms.CharField(max_length=100)
     email = forms.EmailField()
     message = forms.CharField(widget=forms.Textarea)
-    number = forms.CharField(max_length=10)
+    number = forms.CharField(max_length=20)
     mail_type = forms.CharField(label='Enquiry Type', widget=forms.Select(choices=TYPE_CHOICES))
     captcha = CaptchaField()
