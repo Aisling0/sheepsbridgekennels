@@ -13,7 +13,7 @@ SECRET_KEY = '-3$$w8z$$=g=%fql9k@!$^t+4vk$^cb!%ew@s)v0iduc=agv=5'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'sheepsbridge.herokuapp.com']
+ALLOWED_HOSTS = ['127.0.0.1', 'sheepsbridge.herokuapp.com', 'sheepsbridgekennels.com']
 
 SITE_ID = 2
 INTERNAL_IPS = ('127.0.0.1',)
