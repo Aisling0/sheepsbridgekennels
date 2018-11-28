@@ -35,7 +35,10 @@
                     </div>
                 </div>
                 <br>
-                {{ form.captcha }}<button class='js-captcha-refresh'><i class="fa fa-refresh" aria-hidden="true"></i></button>
+                <div style="border: 1px solid grey;">
+                {{ form.captcha }}
+                    </div>
+                <button class='js-captcha-refresh'><i class="fa fa-refresh" aria-hidden="true"></i></button>
 
                 <button id="formBtn" type="submit" value="Send" class="btn btn-success btn-lg">Send</button>
             </form>
